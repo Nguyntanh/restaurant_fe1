@@ -36,3 +36,46 @@ Real-time: WebSocket (STOMP) – Kết nối tức thời giữa các bộ phậ
 
 📈 Tầm Nhìn Phát Triển
 Hướng tới trở thành một nền tảng phân tích dữ liệu lớn (Big Data), giúp chủ doanh nghiệp đưa ra các quyết định thay đổi thực đơn và chiến lược kinh doanh dựa trên hành vi thực tế của khách hàng.
+
+💻 Hướng Dẫn Cài Đặt (Dành cho Developers)
+Yêu cầu hệ thống:
+JDK: 17 (GA)
+
+Build Tool: Maven
+
+Database: MySQL 8.0
+
+Node.js: v18+
+
+Các bước khởi chạy:
+Backend:
+
+PowerShell
+
+cd restaurant-be
+mvn clean install
+mvn spring-boot:run
+Web Admin:
+
+PowerShell
+
+cd restaurant-web
+npm install
+npm run dev
+Mobile App:
+
+PowerShell
+
+cd restaurant-mobile
+npm install
+npx react-native run-android
+📝 Nhật Ký Hệ Thống (Audit Log) & Bảo Mật
+Dự án áp dụng các tiêu chuẩn bảo mật nghiêm ngặt:
+
+Mã hóa mật khẩu BCrypt.
+
+JWT (JSON Web Token) cho xác thực API.
+
+Phân quyền chi tiết: Admin, Manager, Staff, Kitchen.
+
+Tác giả: Nguyễn Tuấn Anh - Dự án được phát triển với mục tiêu tối ưu hóa ngành F&B thông qua chuyển đổi số.
